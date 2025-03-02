@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amba Store - Sepatu Trendy</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #666;
+            --text-color: white;
+            --button-bg: #444;
+            --button-hover: #555;
+            --product-bg: white;
+            --product-text: black;
+            --footer-bg: #222;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            color: var(--text-color);
+        }
+        header {
+            background: url('https://source.unsplash.com/1200x400/?store') no-repeat center;
+            background-size: cover;
+            padding: 50px;
+            color: var(--text-color);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .banner {
+            background: url('https://source.unsplash.com/1200x400/?shoes') no-repeat center;
+            background-size: cover;
+            color: var(--text-color);
+            padding: 80px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #kategori {
+            background: url('https://source.unsplash.com/1200x1200/?shoe-collection') no-repeat center;
+            background-size: cover;
+            padding: 100px;
+        }
+        #kontak {
+            background: url('https://source.unsplash.com/1200x800/?contact') no-repeat center;
+            background-size: cover;
+            padding: 100px;
+        }
+        .slider-container {
+            width: 90%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+        .product-container {
+            display: inline-flex;
+            gap: 20px;
+        }
+        .product {
+            width: 300px;
+            background: var(--product-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            color: var(--product-text);
+        }
+        .product img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .product span {
+            display: block;
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .product button {
+            padding: 12px 18px;
+            background: var(--button-bg);
+            color: var(--text-color);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background: var(--button-hover);
+        }
+        footer {
+            background: var(--footer-bg);
+            color: var(--text-color);
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amba Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banner" id="home">
+        <h2>Temukan Sepatu Trendy di Amba Store</h2>
+    </section>
+    
+    <section id="kategori" class="section">
+        <h2>Koleksi Sepatu</h2>
+        <div class="slider-container">
+            <div class="product-container">
+                <div class="product">
+                    <img src="AIR+JORDAN+1+MID.png" alt="Air Jordan Mid 1">
+                    <p>Air Jordan Mid 1</p>
+                    <span>Rp 450.000</span>
+                </div>
+                <div class="product">
+                    <img src="AIR+JORDAN+1+RETRO+HIGH+OG.png" alt="Running Shoes">
+                    <p>Air Jordan Retro High OG</p>
+                    <span>Rp 550.000</span>
+                </div>
+                <div class="product">
+                    <img src="NIKE+AIR+PEGASUS+2005.png" alt="Formal Shoes">
+                    <p>Nike Air Pegasus 2005</p>
+                    <span>Rp 600.000</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="product-container">
+                <div class="product">
+                    <img src="NIKE+SHOX+TL.png" alt="Basketball Shoes">
+                    <p>Nike Shox TL</p>
+                    <span>Rp 700.000</span>
+                </div>
+                <div class="product">
+                    <img src="NIKE+VOMERO+18.png" alt="Casual Shoes">
+                    <p>Nike Vomero</p>
+                    <span>Rp 500.000</span>
+                </div>
+                <div class="product">
+                    <img src="AIR+JORDAN+1+RETRO+HIGH+OG.png" alt="Boots">
+                    <p>Air Jordan Retro High</p>
+                    <span>Rp 750.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="kontak" class="section">
+        <h2>Kontak Kami jika ingin memesan</h2>
+        <p>Email: gibranarsyid999@gmail.com</p>
+        <p>Telepon: +62 857-1866-8652</p>
+        <p>Alamat: SMKN 22 JAKARTA</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Amba Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
